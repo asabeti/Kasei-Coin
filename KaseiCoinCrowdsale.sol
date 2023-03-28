@@ -19,16 +19,19 @@ contract KaseiCoinCrowdsale is Crowdsale, MintedCrowdsale {
     }
 }
 
-/*
+
 contract KaseiCoinCrowdsaleDeployer {
     // Create an `address public` variable called `kasei_token_address`.
-    // YOUR CODE HERE!
+    address public kasei_token_address;
+
     // Create an `address public` variable called `kasei_crowdsale_address`.
-    // YOUR CODE HERE!
+    address public kasei_crowdsale_address;
 
     // Add the constructor.
     constructor(
-       // YOUR CODE HERE!
+       string memory name,
+       string memory symbol,
+       address payable wallet
     ) public {
         // Create a new instance of the KaseiCoin contract.
         // YOUR CODE HERE!
